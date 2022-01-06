@@ -11,14 +11,44 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section {
+    border: 1px solid slategray;
+    width: 300px;
+    height: fit-content;   
+    padding: 1rem;
+    margin: 3rem;
+}
+
+img {
+    width: 298px;
+    margin-left: -1rem;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    main {
+        width: 800px;
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
+    main {
+        width: 350px;
+    }
     
 }
